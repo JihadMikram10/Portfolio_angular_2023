@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from 'src/app/shared/project';
+import ScrollReveal from 'scrollreveal';
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -27,5 +29,14 @@ export class ProjectsComponent implements OnInit {
       url: 'https://generator-color.web.app/',
     },
   ];
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    const sr = ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 600,
+      origin: 'top',
+    });
+    sr.reveal('.project');
+  }
 }
