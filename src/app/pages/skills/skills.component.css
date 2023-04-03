@@ -1,0 +1,21 @@
+#hover-button {
+  position: relative; /* Set the button to have a relative position */
+}
+
+#hover-button:hover::after {
+  content: attr(
+    title
+  ); /* Set the content of the tooltip to the value of the title attribute */
+  position: absolute; /* Set the tooltip to have an absolute position */
+  bottom: 68%; /* Position the tooltip above the button */
+  left: 50%; /* Center the tooltip horizontally */
+  transform: translateX(-50%); /* Move the tooltip to the center */
+  padding: 10px 20px 10px 20px; /* Add some padding to the tooltip */
+  background-color: #464646; /* Set the background color of the tooltip */
+  color: #fff; /* Set the text color of the tooltip */
+  font-size: 14px; /* Set the font size of the tooltip */
+  white-space: nowrap; /* Prevent the tooltip from wrapping to a new line */
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+}

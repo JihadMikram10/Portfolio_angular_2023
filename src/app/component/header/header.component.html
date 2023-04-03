@@ -1,0 +1,59 @@
+<div class="w-full grid grid-cols-2">
+  <div class="hidden justify-start my-8 list-none ml-10 md:flex">
+    <a routerLink="/home" class="mx-4 hover:border-b-2 border-black">Home</a>
+    <a routerLink="/skills" class="mx-4 hover:border-b-2 border-black"
+      >Skills</a
+    >
+    <a routerLink="/project" class="mx-4 hover:border-b-2 border-black"
+      >Project</a
+    >
+  </div>
+  <div class="hidden justify-end my-8 mr-24 md:flex">
+    <a
+      href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jihadmikram10@gmail.com"
+      class="bx bxl-gmail text-3xl text-red-700 mx-2"
+    ></a>
+    <a
+      href="https://www.linkedin.com/in/jihad-mikram-4a7aa6230/"
+      class="bx bxl-linkedin-square text-3xl text-blue-700 mx-4"
+    ></a>
+    <a href="" class="bx bxl-github text-3xl text-black mx-4"></a>
+  </div>
+
+  <!----responsive-->
+
+  <button
+    id="menu-btn"
+    class="hamburger flex justify-start m-7 p-1 md:hidden focus:outline-none"
+  >
+    <span class="hamburger-top bg-black"></span>
+    <span class="hamburger-middle bg-black"></span>
+    <span class="hamburger-bottom bg-black"></span>
+  </button>
+
+  <div class="md:hidden">
+    <div
+      id="menu"
+      class="absolute flex-col items-center hidden self-end py-5 mt-14 space-y-6 font-bold bg-white text-black z-10 sm:w-[70%] sm:mb-4 sm:self-center left-6 right-6 drop-shadow-md"
+    >
+      <a routerLink="/home" class="mx-4 hover:border-b-2 border-black">Home</a>
+      <a routerLink="/skills" class="mx-4 hover:border-b-2 border-black"
+        >Skills</a
+      >
+      <a routerlin="/project" class="mx-4 hover:border-b-2 border-black"
+        >Project</a
+      >
+      <div class="flex">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jihadmikram10@gmail.com"
+          class="bx bxl-gmail text-3xl text-red-700 mx-2"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/jihad-mikram-4a7aa6230/"
+          class="bx bxl-linkedin-square text-3xl text-blue-700 mx-2"
+        ></a>
+        <a href="" class="bx bxl-github text-3xl text-black mx-2"></a>
+      </div>
+    </div>
+  </div>
+</div>
