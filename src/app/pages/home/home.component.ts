@@ -16,19 +16,19 @@ export class HomeComponent implements OnInit {
       loop: true,
     });
     const sr = ScrollReveal({
-      reset: true,
       distance: '60px',
       duration: 2500,
       delay: 400,
+      origin: 'left',
     });
     const lr = ScrollReveal({
-      reset: true,
       distance: '60px',
       duration: 2500,
-      delay: 600,
-      origin: 'top',
+      delay: 400,
+      origin: 'left',
     });
-    lr.reveal('.about_me');
-    sr.reveal('.image-profile');
+
+    sr.reveal('.about_me');
+    lr.reveal('.image-profile');
   }
 }
